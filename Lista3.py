@@ -78,7 +78,7 @@ def q_7():
     debt = float(input('Digite o valor do débito: '))
     credt = float(input('Digite o valor do crédito: '))
     saldo_atual = saldo - debt + credt
-    balanco = 'Positivo' if saldo_atual > 0 else 'Negativo'
+    balanco = 'Positivo' if saldo_atual >= 0 else 'Negativo'
     print(f'Exibindo informações da conta nº{n_conta}:'
           f'\nSaldo atual: R${saldo_atual:.2f}'
           f'\nSaldo {balanco}.')
